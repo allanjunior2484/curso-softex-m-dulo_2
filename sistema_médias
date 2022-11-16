@@ -1,0 +1,21 @@
+Sistema de médias
+
+     var n1 = Number(window.prompt('digite sua primeira nota: ')) 
+     var n2 = Number(window.prompt('digite sua segunda nota: '))
+     var n3 = Number(window.prompt('digite sua terceira nota: '))
+     var media = (n1 + n2 + n3)/3
+
+     if (media >= 7)
+     window.alert(`PARABÉNS!!! Você foi aprovado com ${media} na média`)
+     else (window.alert(`Sua média foi ${media} você não foi aprovado`))
+     
+     
+ -----------------------------------------------------------------------------------------    
+     
+Nota que falta para ser aprovado
+
+var n1 = Number(window.prompt('digite sua primeira nota: ')) 
+var n2 = Number(window.prompt('digite sua segunda nota: '))
+var pnota = 21 - (n1 + n2) 
+
+window.alert(`Sua póxima nota deve ser no mínimo ${pnota} para ser aprovado`)
