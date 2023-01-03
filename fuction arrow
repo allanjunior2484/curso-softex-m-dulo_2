@@ -1,0 +1,17 @@
+###############################
+function aviso() {
+    console.log('aviso!')
+  }
+  aviso()
+  
+##############################
+  function ola(nome) {
+    console.log('Olá', nome)
+  }
+  ola('allan')
+  
+ ###############################
+  const outro_ola = (nome) => {
+    return console.log('Olá', nome)
+  }
+  outro_ola('allan')
