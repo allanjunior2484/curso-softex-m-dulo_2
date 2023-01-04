@@ -1,0 +1,36 @@
+var cliente = {
+    nome: 'admin',
+    login: 'admin',
+    senha: '12345',
+    conta: '0000',
+    saldo: 50000.00
+}
+
+var deposito = function(valor){
+   cliente.saldo = cliente.saldo + valor;
+}
+
+var saque = function(valor){
+    cliente.saldo = cliente.saldo - valor;
+}
+
+var extrato = function(){
+    console.log('SALDO: ' + cliente.saldo);
+}
+
+var consultar_cliente = function(){
+    console.log('Nome: ' + cliente.nome);
+    console.log('Login: ' + cliente.login);
+    console.log('Senha: ' + cliente.senha);
+    console.log('Conta: ' + cliente.conta);
+    console.log('Saldo: ' + cliente.saldo);
+}
+
+consultar_cliente();
+
+deposito(100);
+extrato();
+
+saque(50);
+
+consultar_cliente();
